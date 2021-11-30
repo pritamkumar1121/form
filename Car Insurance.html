@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        background-color: rgba(221, 238, 247, 0.801);
+        background-size: cover;
+      }
+      .login-form {
+        width: 350px;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 6px;
+        margin: 20px;
+        padding-left: 20px;
+        background-color:rgba(182, 189, 202, 0.849);
+      }
+      .login-form h1 {
+        font-size: 14px;
+      }
+      .login-form h2 {
+        font-size: 14px;
+      }
+      .login-form input {
+        border-radius: 6px;
+      }
+      .styled {
+    border: 0;
+    line-height: 1;
+    padding:3px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+    background-color:red;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color:red;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.login-form button {
+  margin-left: 55px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Quik Quote for your Car Insurance</h1>
+      <form action="#" method="post">
+        <input type="text" name="user" placeholder="Name" />
+        <br><br>
+         <input type="email" name="email" placeholder="Email" />
+        <br><br>
+        <input type="phonenumber" name="phonenumber" placeholder="Mobile Number"/>
+        <h2 >Coverage Type</h2>
+        <input value="Comprehensive" name="CoverTpye" type="radio" id="Comprehensive" /><label for="Comprehensive">Comprehensive</label>
+        <input value="TP" name="CoverTpye" type="radio" id="TP" /><label for="TP">Third Party</label>
+        <input value="other" name="CoverTpye" type="radio" id="NotSure" /><label for="NotSure" >Not Sure</label><br><br>
+    
+        <input type="checkbox">I hereby authorize HDFC ERGO General Insurance to contact me. 
+          I agree that this consent will override my NDNC registration.
+          <br><br>
+         
+        <button class="favorite styled"
+        type="button">
+    GET QUOTE NOW !
+</button>
+
+      </form>
+    </div>
+  </body>
+</html>
